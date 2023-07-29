@@ -16,7 +16,7 @@ for ( let i = 0; i <= 100; i++)
 }
 
 // Exercise 2 Section
-console.log("EXERCISE 2:\n====FIZZBUZZ======\n");
+console.log("EXERCISE 2:\n====FIZZBUZZ====for loop==\n");
 for ( let n = 0; n <= 100; n++)
 {
     console.log(n);
@@ -36,6 +36,7 @@ for ( let n = 0; n <= 100; n++)
 }
 // WHILE
 // Exercise 1 Section
+console.log("EXERCISE 1:\n========while  loop==\n");
 let m = 1;
 while (m <= 100 )
 {
@@ -46,10 +47,11 @@ while (m <= 100 )
 }
 
 // Exercise 2 Section
+console.log("EXERCISE 2:\n====FIZZBUZZ====while loop==\n");
 let p =1;
 while (p <= 100 )
 {
-    console.log(n);
+    console.log(p);
 
     if (p % 3 == 0 && p % 5 == 0)
     {
@@ -69,6 +71,7 @@ while (p <= 100 )
 
 // DO WHILE
 // Exercise 1 Section
+console.log("EXERCISE 1:\n========do while  loop==\n");
 let x = 1;
 do
 {
@@ -80,10 +83,11 @@ do
 } while (x <= 100 )
 
 // Exercise 2 Section
+console.log("EXERCISE 2:\n====FIZZBUZZ====do while loop==\n");
 let z = 1;
 do{
 
-    console.log(n);
+    console.log(z);
 
     if (z % 3 == 0 && z % 5 == 0)
     {
@@ -106,15 +110,36 @@ let value = Math.round((Math.random() * 500)); // creates a random number betwee
 let n = Math.round(Math.random() * (500 - 100) + 100); // creates a random number between 100 and 500
 //let value = Math.round((Math.random() * 500)); // creates a random number between 0 and 500
 //let n = Math.round(Math.random() * (500 - 100) + 100); // creates a random number between 100 and 500
-for ( let c = 0; c <= n; c++)
-{
+console.log("EXERCISE 4:\n====FIND Value==\n");
+let valueFound = false;
+//let value=550;
+for ( let c = 1; c <= n; c++)
+    {   
     if (c == value)
     {
-        console.log('Found ${value}!');
-        break;
+      console.log(`Found ${value} in the range 1 to ${n}.`);
+      valueFound = true;
+      break;
+    } 
+    //else {
+      //  valueFound = false;
+    //}
     }
-}
+    if (valueFound == false)
+    {
+       console.log(`Did  not find ${value} in the range 1 to ${n}.`);
+    }
+    
 
-console.log('did  not find ${value}.');
+    //if (c==n)
+    //if (valueFound)
+    //{console.log(`Found ${value} in the range 1 to ${n}.`);}
+    //else 
+    //{
+    //    console.log(`Did  not find ${value} in the range 1 to ${n}.`);
+   // }
+   //}
+   //console.log(`Found ${value}!`);
+//console.log(`did  not find ${value}..`);
 
 //Exercise 5 : BONUS FIZZBUZZ
